@@ -4,9 +4,6 @@ SwadSeva is a responsive food delivery platform built using **React** and **Type
 
 This project integrates **Swiggy's live API** to fetch restaurant data and provides a smooth, optimized experience for users.
 
-## 🚀 Live Demo
-
-Check out the live version here: [SwadSeva](https://swadseva.vercel.app)
 
 ## 📂 Features
 
@@ -59,26 +56,4 @@ To set up the project locally, follow these steps:
    ```
 
 6. Open [http://localhost:5173](http://localhost:5173) to view the app in the browser.
-
-## 🚀 Deployment
-
-This project is deployed on **Vercel**. You can deploy it by connecting your GitHub repository to Vercel or following Vercel's deployment guide for React projects.
-
-## 🌟 Future Improvements
-
-- **Backend Integration**: Plan to add backend support for storing order history.
-- **Improved Performance**: Continuously working on optimizing data fetching and reducing load times.
-
-## 💡 Inspiration and Acknowledgment
-
-A special thanks to **Akshay Saini**, the instructor of the **Namaste React** course, whose teachings helped build my confidence in React development.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](https://github.com/parshurambagade/swadseva/issues) or submit a pull request.
-
-
-## Connect
-
-If you have any questions or feedback, feel free to reach out or open an issue! 😊
 

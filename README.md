@@ -57,3 +57,13 @@ To set up the project locally, follow these steps:
 
 6. Open [http://localhost:5173](http://localhost:5173) to view the app in the browser.
 
+<img src="homepage.png"/>
+
+<img src="details.png"/>
+
+<img src="menuaddtocard.png"/>
+
+<img src="recomendad.png"/>
+
+<img src="cart.png"/>
+

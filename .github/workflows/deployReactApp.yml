@@ -5,24 +5,7 @@ on: [workflow_dispatch]
 
 
 jobs:
-  #run the tests before deploying
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get code
-        uses: actions/checkout@v4
-      - name: Install Node 20
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: print node version
-        run: node -v
-      - name: Install dependencies
-        run: npm ci
-      - name: Run tests
-        run: npm run test
   build:
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code

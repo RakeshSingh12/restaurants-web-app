@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const profile =
-  "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541";
+
+const profile = "https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_800/PUDO_ASSETS/GenieMicrosite/GenieAnimation/Genie";
+
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img src={"/logo.png"} alt="SwadSeva" className="h-10" />
+            <img src={profile} alt="SwadSeva" className="h-10" />
           </div>
           <div className="hidden sm:flex items-center space-x-6 lg:space-x-9">
             <Link

@@ -1,16 +1,14 @@
-import Header from './Header'
-import Footer from './Footer'
+import Header from "./Header";
+import Footer from "./Footer";
 
-const Layout = ({children}:{children:React.ReactNode}) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
-        <Header />
-        <main>
-            {children}
-        </main>
-        <Footer />
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

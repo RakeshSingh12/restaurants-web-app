@@ -15,68 +15,74 @@ import ProtectedSuccessRoutes from "./components/ProtectedSuccessRoutes";
 import { OrdersContextProvider } from "./contexts/OrdersContext";
 
 const App = () => {
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        index: true,
+        element: (
+          <Layout>
+            <Home />
+          </Layout>
+        ),
+      },
+      {
+        path: "/restaurant/:resId",
+        element: (
+          <Layout>
+            <Restaurant />
+          </Layout>
+        ),
+      },
+      {
+        path: "/cart",
+        element: (
+          <Layout>
+            <CartPage />
+          </Layout>
+        ),
+      },
+      {
+        path: "/orders",
+        element: (
+          <Layout>
+            <Orders />
+          </Layout>
+        ),
+      },
+      {
+        path: "/register",
+        element: (
+          <Layout>
+            <Register />
+          </Layout>
+        ),
+      },
+      {
+        path: "/login",
+        element: (
+          <Layout>
+            <Login />
+          </Layout>
+        ),
+      },
+      {
+        path: "/success",
+        element: (
+          <Layout>
+            <ProtectedSuccessRoutes children={<Success />} />
+          </Layout>
+        ),
+      },
+      {
+        path: "/*",
+        element: <Error />,
+      },
+    ],
     {
-      path: "/",
-      element: (
-        <Layout>
-          <Home />
-        </Layout>
-      ),
-    },
-    {
-      path: "/restaurant/:resId",
-      element: (
-        <Layout>
-          <Restaurant />
-        </Layout>
-      ),
-    },
-    {
-      path: "/cart",
-      element: (
-        <Layout>
-          <CartPage />
-        </Layout>
-      ),
-    },
-    {
-      path: "/orders",
-      element: (
-        <Layout>
-          <Orders />
-        </Layout>
-      ),
-    },
-    {
-      path: "/register",
-      element: (
-        <Layout>
-          <Register />
-        </Layout>
-      ),
-    },
-    {
-      path: "/login",
-      element: (
-        <Layout>
-          <Login />
-        </Layout>
-      ),
-    },
-    {
-      path: "/success",
-      element: (
-        <Layout>
-          <ProtectedSuccessRoutes children={<Success />} />
-        </Layout>
-      ),
-    },
-    {
-      path: "/*",
-      element: <Error />,
-    },
-  ]);
+      basename: "/restaurants-web-app/",
+    }
+  );
 
   return (
     <ResContextProvider>
